@@ -1,24 +1,75 @@
 aid: cybergis-center-for-advanced-digital-spatial-studies
+
 name: CyberGIS Center for Advanced Digital & Spatial Studies
-description: 'CyberGIS Center for Advanced Digital & Spatial Studies is a company surfaced via the API
-  Evangelist harvest backlog (source: vc-portfolio) and added to the network as a stub for full-pipeline
-  profiling.'
+
+image: https://cybergis.illinois.edu/wp-content/uploads/2018/06/cropped-CyberGIS.png
+
+description: 'The CyberGIS Center for Advanced Digital & Spatial Studies, based at the University of Illinois, advances geospatial science by integrating high‑performance computing, big data analytics, and interdisciplinary research. It offers open‑source middleware, cloud‑based services, and educational resources to empower researchers, policymakers, and communities in tackling complex spatial challenges such as climate change, urban planning, and disaster response. Through collaborations with NSF and other partners, CyberGIS drives innovation in geospatial data processing, visualization, and collaborative analysis, fostering a sustainable future through shared cyberinfrastructure.'
+
 url: https://raw.githubusercontent.com/api-evangelist/cybergis-center-for-advanced-digital-spatial-studies/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-23'
+
 modified: '2026-10-23'
+
 tags:
 - Company
-apis: []
+- Geospatial
+- HPC
+- Open-Source
+- Research
+- Education
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: ChangeLog
+  url: changelog/cybergis-center-for-advanced-digital-spatial-studies-changelog.yml
+- type: WellKnown
+  url: well-known/cybergis-center-for-advanced-digital-spatial-studies-well-known.yml
+- type: Hosts
+  url: hosts/cybergis-center-for-advanced-digital-spatial-studies-hosts.yml
+- type: SDKs
+  url: packages/cybergis-center-for-advanced-digital-spatial-studies-packages.yml
+- type: Packages
+  url: packages/cybergis-center-for-advanced-digital-spatial-studies-packages.yml
+- type: Newsroom
+  url: https://cybergis.illinois.edu/news/997/
+- type: ChangeLog
+  url: https://cybergisxhub.cigi.illinois.edu/releases/version-0-9-4/
+- type: GitHubOrganization
+  url: https://github.com/cybergis
+- type: DomainSecurity
+  url: security/cybergis-center-for-advanced-digital-spatial-studies-domain-security.yml
 - type: Website
   url: http://cybergis.illinois.edu
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: The CyberGIS Center provides research services and does not expose a public API.
+  evidence:
+    - url: https://cybergis.illinois.edu/
+      status: 200
+  checked: '2026-10-23'
+x-enrichment:
+  date: '2026-10-23'
+  status: enriched
+  artifacts_added: 10
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

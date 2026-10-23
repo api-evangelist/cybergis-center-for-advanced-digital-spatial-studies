@@ -1,0 +1,16 @@
+generated: '2026-10-23'
+method: probed
+generator: harvest-packages.py
+source: registry metadata endpoints (registry.npmjs.org, pypi.org, rubygems.org, api.nuget.org, packagist.org, crates.io) ; github.com/cybergis
+ownership_rule: 'official: true only when the registry metadata (homepage, repository, author, URLs) names the provider''s domain (illinois.edu,
+  security/cybergis-center-for-advanced-digital-spatial-studies-domain-security.yml) or its accepted GitHub org (cybergis).'
+packages:
+- name: cybergis-compute-api-tests
+  registry: github
+  url: https://github.com/cybergis/cybergis-compute-api-tests
+  language: Python
+  official: true
+  version: null
+  published: '2023-02-21'
+  source_repo: https://github.com/cybergis/cybergis-compute-api-tests
+  evidence: repository in github.com/cybergis, whose profile names the provider's domain

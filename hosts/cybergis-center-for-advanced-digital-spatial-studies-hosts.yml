@@ -1,0 +1,141 @@
+generated: '2026-10-23'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 12
+  own: 11
+  other_domain: 0
+  platform: 1
+  roles:
+  - api
+  - other
+  - source
+  - status
+  - website
+hosts:
+- host: api.illinois.edu
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: illinois.edu
+  role: api
+  relation: own
+- host: api.rokwire.illinois.edu
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: illinois.edu
+  role: api
+  relation: own
+- host: cybergis.illinois.edu
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  types:
+  - Newsroom
+  - Website
+  serves: []
+  registrable_domain: illinois.edu
+  role: website
+  relation: own
+- host: cybergisxhub.cigi.illinois.edu
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - ChangeLog
+  serves:
+  - docs
+  registrable_domain: illinois.edu
+  role: other
+  relation: own
+- host: dibbs.cigi.illinois.edu
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: illinois.edu
+  role: other
+  relation: own
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
+- host: go.illinois.edu
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: illinois.edu
+  role: other
+  relation: own
+- host: gsi.cigi.illinois.edu
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: illinois.edu
+  role: other
+  relation: own
+- host: illinois.edu
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: illinois.edu
+  role: other
+  relation: own
+- host: las.illinois.edu
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: illinois.edu
+  role: other
+  relation: own
+- host: research.illinois.edu
+  found_by:
+  - probed
+  - site-links
+  types: []
+  serves: []
+  registrable_domain: illinois.edu
+  role: other
+  relation: own
+- host: status.illinois.edu
+  found_by:
+  - probed
+  - site-links
+  types: []
+  serves: []
+  registrable_domain: illinois.edu
+  role: status
+  relation: own
